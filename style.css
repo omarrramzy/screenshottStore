@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@1,700&family=Markazi+Text&family=Roboto:wght@300;500&family=Shadows+Into+Light&family=Sono:wght@200;400;500&family=Tajawal:wght@700;800&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Sono', sans-serif;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+
+.menuBtn{
+    color: #150050;
+    display: none;
+}
+
+#onScrollBtn{
+    font-size: 20px;
+}
+.onScroll{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 8px;
+    border-radius: 50px;
+    border:none;
+    background-color: #7FBCD2;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    background-color: #7FBCD2;
+}
+
+ul li {
+    padding: 15px;
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #150050;
+    font-weight: bold;
+}
+
+ul li a:hover{
+    box-shadow: #150050 0 2px 0;
+}
+
+h4,
+h2{
+    color: #150050;
+}
+
+h4{
+    padding: 5px;
+}
+
+.phoneProduct,
+.accessoriesProduct,
+.laptopProduct,
+.tvProduct{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.productContainer{
+    padding-top: 10px;
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    border: 2px solid #3C4048;
+    background-color: #7FBCD2;
+    text-align: center;
+}
+
+.productContainer:hover{
+    transition: ease 0.3s;
+    box-shadow: #150050 -10px 10px 0;
+}
+
+.phoneImg,
+.accessoriesImg,
+.laptopsImg,
+.tvImg{
+    width: 130px;
+    height: 120px;
+    border-radius: 5px;
+    margin: 10px 5px 0 5px;
+}
+
+img:hover{
+    rotate: -5deg;
+    transition: ease 0.3s;
+}
+
+#cart{
+    color: #150050;
+    font-size: 25px;
+}
+
+.showItem{
+    position: relative;
+    left: -27px;
+    top: -10px;
+    color: #FFEEAF;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.addToCart{
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    border-radius: 3px;
+    background-color: #FFEEAF;
+    color: #150050;
+    font-weight: bolder;
+}
+
+@media (max-width: 767px){
+    .productContainer{
+        height: 260px;
+        width: 170px;
+    }
+    .menuBtn{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    ul{
+        flex-wrap: wrap;
+    }
+    ul li {
+        width: 100%;
+        display: none;
+        text-align: center;
+    }
+    ul li a:hover{
+        background-color: #FFEEAF;
+    }
+}
